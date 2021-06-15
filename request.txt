@@ -1,0 +1,24 @@
+###
+POST http://localhost:8080/hotel
+Content-Type: application/json
+
+{
+"name" : "Hotel"
+}
+
+
+###
+POST http://localhost:8080/room
+Content-Type: application/json
+
+{
+"number" : 5,
+  "floor" : 4,
+  "size" : 2,
+  "hotelId" : 1
+
+}
+
+
+###
+GET http://localhost:8080/room/getRoomsByHotelId/1?page=0
